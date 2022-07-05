@@ -186,7 +186,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `Hi ${name}, ${global.ucapan}\nhttps://bit.ly/3yErwe6`.trim()
+      let judul = `Hi ${name}, ${global.ucapan}\nhttps://bit.ly/3yErwe6\nhttps://onebotz-api.herokuapp.com/`.trim()
       const sections = [
       {
         title: 'List Menu ' + namabot,
