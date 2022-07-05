@@ -186,7 +186,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       }
     })
     if (teks == '404') {
-      let judul = `Hi ${name}, ${global.ucapan}`.trim()
+      let judul = `Hi ${name}, ${global.ucapan}\nhttps://bit.ly/3yErwe6`.trim()
       const sections = [
       {
         title: 'List Menu ' + namabot,
@@ -276,7 +276,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3TemplateButtonImg(m.chat, fla + teks, text.trim(), wm, `Pemilik Bot`, `${_p}owner`, `Contributors`, `${_p}tqto`, `Info Bot`, `${_p}speed`)
+    await conn.send3TemplateButtonImg(m.chat, waifu, text.trim(), wm, `Pemilik Bot`, `${_p}owner`, `Contributors`, `${_p}tqto`, `Info Bot`, `${_p}speed`)
   } catch (e) {
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
