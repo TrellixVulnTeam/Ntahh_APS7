@@ -6,9 +6,9 @@ let handler = async (m, { conn, args }) => {
   let res = `https://rimurubotz-api.herokuapp.com/api/sadboy?text=${response[0]}`
   conn.sendFile(m.chat, res, 'sadboy.png', `Sudah Jadi`, m, false)
 }
-handler.help = ['logololi'].map(v => v + ' <text>')
+handler.help = ['logosadboy'].map(v => v + ' <text>')
 handler.tags = ['nulis', 'anime']
-handler.command = /^(logololi)$/i
+handler.command = /^(logokaneki)$/i
 handler.register = true
 
 handler.limit = true
