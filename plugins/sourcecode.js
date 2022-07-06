@@ -1,26 +1,9 @@
-let handler = async (m, { conn }) => {
-	
-	// Link Script jgn di ganti ya pliss
-    // Kalo mau masukin github kamu tinggal add aja link githubnya tapi jangan di hapus sumber script!
-    // Jangan Ngeyell..
-    // Kalo ngeyel gk bakal gw up sc lgi.
-    
-    let txt = `
-*Base Ori*
-https://github.com/Nutrutomo/wabot-aq
-
-*Recode*
-https://github.com/FokusDotId/Family-MD.git
-
-*Recode 2*
-By Me 🐦
-`
-     conn.reply(m.chat, txt, m)
-}
+let fetch = require('node-fetch')
+let handler = async (m, { conn }) => conn.sendButtonLoc(m.chat, await (await fetch(fla + 'SCRIPT')).buffer(), `
+SCRIPT BOT
+`.trim(), 'Masih Dalam Tahap Pengembangan', 'Back To Menu', '#? All')
 handler.help = ['sourcecode']
 handler.tags = ['info']
-handler.command = /^(sc(ript(bot)?)?|sourcecode)$/i
+handler.command = /^(sourcecode|sc|script)$/i
 
 module.exports = handler
-
-
