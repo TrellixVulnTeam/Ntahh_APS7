@@ -114,8 +114,8 @@ global.APIKeys = { // APIKey Here
 /*============== WATERMARK ==============*/
 global.wm = 'O  n  e  -  B  o  t  z' //Main Watermark
 global.wm2 = '¸„٭⊹•~⍣°”ˆ˜¨ One-MD¨˜ˆ”°⍣~•⊹٭„¸'
-global.wm3 = '☘︎ One-MD'
-global.botdate = `☘︎ 𝗗𝗮𝘁𝗲: ${week} ${date}\n☘︎ 𝗧𝗶𝗺𝗲: ${wktuwib}`
+global.wm3 = '⫹⫺ One-MD'
+global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}\n⫹⫺ 𝗧𝗶𝗺𝗲: ${wktuwib}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
 global.titlebot = `☘︎ 𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁`
 global.author = '┄┄┄┅┅❑ 𝗢𝗻𝗲 𝗕𝗼𝘁𝘇 ❑┅┅┄┄┄'
@@ -166,19 +166,19 @@ global.dmenuf = '┗––––––––––✦' //footer
 // COMMAND MENU
 global.cmenut = '❏––––––『' //top
 global.cmenuh = '』––––––' //header
-global.cmenub = '┊☃︎ ' //body
+global.cmenub = '┊⬡ ' //body
 global.cmenuf = '┗━═┅═━––––––๑\n' //footer
 global.cmenua = '\n⌕ ❙❘❙❙❘❙❚❙❘❙❙❚❙❘❙❘❙❚❙❘❙❙❚❙❘❙❙❘❙❚❙❘ ⌕\n     ' //after
-global.pmenus = '☃︎' //pembatas menu selector
+global.pmenus = '⬡' //pembatas menu selector
 
 global.htki = '––––––『' //hiasan title kiri
 global.htka = '』––––––' //hiasan title kanan
 global.lopr = 'Ⓟ'
 global.lolm = 'Ⓛ'
-global.htjava = '☘︎' //hiasan Doang :v
+global.htjava = '⫹⫺' //hiasan Doang :v
 
 /*============== STICKER WM ==============*/
-global.stickpack = '𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
+global.stickpack = '𝗪𝗵𝗮𝘁𝘀𝗮𝗽𝗽 𝗕𝗼𝘁\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n'
 global.stickauth = ``
 
 global.multiplier = 38 // The higher, The harder levelup
