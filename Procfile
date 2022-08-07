@@ -1,1 +1,1 @@
-worker : npm i @adiwajshing/baileys && npm i @adiwajshing/baileys-md && node .
+worker : npm i @adiwajshing/baileys@4.2.0 && node .
