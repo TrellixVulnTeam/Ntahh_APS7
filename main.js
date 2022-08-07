@@ -64,7 +64,6 @@ loadDatabase()
 //   require('./lib/cluster').Cluster()
 // }
 
-global.conn = new WAConnection()
 conn.version =[2,2143,3]
 conn.browserDescription =['Baileys', 'Safari', '3.5']
 global.authFile = `${opts._[0] || 'session'}.json`
