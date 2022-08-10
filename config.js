@@ -171,8 +171,8 @@ global.hsquere = ['⛶','❏','⫹⫺']
 
 
 /*⫘⫘⫘⫘ STICKER ⫘⫘⫘⫘⫘*/
-global.stickpack = 'YT: FANGZ BOT'
-global.stickauth = `© Fangz BOT\nOfficial by Whatsapp\nNomor: ${global.nomorbot}`
+global.stickpack = '\n\n\n\n\n\n\n\n\n\n\n" Kau Tahu, Menggendong 3 Orang Bodoh Adalah Hal Yang Bodoh :v "F'
+global.stickauth = ``
 
 global.multiplier = 38 // The higher, The harder levelup
 
