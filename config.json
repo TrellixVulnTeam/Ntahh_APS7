@@ -1,0 +1,36 @@
+{
+    "ownerNumber": "62882006485504@s.whatsapp.net", 
+    "ownerName": "Farhan", 
+    "botName": "Farhan Botz",
+    "footer": "_*Farhan Botz*_", 
+    "sessionName": "session", 
+    "pathimg": "./media/logo.jpg", 
+    "pathqris": "./media/qris.jpg",
+    "group": "https://chat.whatsapp.com/HdpWPPVdtejKWepn0wllRS",
+    "yootube": "https://youtube.com/channel/UCLd-bhT8Dqq9PjGc6bWUVyg",
+     
+    "QrisAllPay": "https://uploader-one-botz.herokuapp.com/file/4RvaM6mDO7pC.jpg",
+    "textBarisDonate1": "Scan Qris",
+    "textBarisDonate2": "Scan Qris",
+    "textBarisDonate3": "Scan Qris",
+    "textBarisDonate4": "Scan Qris",
+  
+    "ButtonTextMenu1": "Youtube",
+    "ButtonTextMenu2": "Rest Api",
+    "quickReplyButton3": "Rules",
+    "quickReplyButton4": "Donasi",
+    "quickReplyButton5": "Dashboard",
+  
+    "ButtonMenuLink1": "https://youtube.com/channel/UCLd-bhT8Dqq9PjGc6bWUVyg",
+    "ButtonMenuLink2": "https://api-lexxy-official.herokuapp.com",
+    "displayTextMenu3": "rules",
+    "displayTextMenu4": "donasi",
+    "displayTextMenu5": "dashboard",
+    "limitCount": 100,
+    "limitGame": 35,
+    "gamewaktu": 90,
+    "sticker": {
+        "packname": "const { farhanbotz } = require=('farhan')\n\n\n\n\n",
+        "author": ""
+    }
+}
