@@ -1,0 +1,8 @@
+Jangan Dihapus, Ntar Error Kaya Gini:
+
+[Error: ENOENT: no such file or directory, open '/app/tmp/1660447693062.png'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/tmp/1660447693062.png'
+}
