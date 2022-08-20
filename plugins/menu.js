@@ -12,15 +12,15 @@ let goo = global.onee
 const defaultMenu = {
   before: `
 ┏━━〔 Info %name 〕━ꕥ
-┃ %goo *Name:* %name
-┃ %goo *Tag:* %tag
-┃ %goo *Status:* %prems
-┃ %goo *Limit:* %limit
-┃ %goo *Money:* %money
-┃ %goo *Role:* %role
-┃ %goo *Level:* %level [ %xp4levelup Xp For Levelup]
-┃ %goo *Xp:* %exp / %maxexp
-┃ %goo *Total Xp:* %totalexp
+┃ ✾ *Name:* %name
+┃ ✾ *Tag:* %tag
+┃ ✾ *Status:* %prems
+┃ ✾ *Limit:* %limit
+┃ ✾ *Money:* %money
+┃ ✾ *Role:* %role
+┃ ✾ *Level:* %level [ %xp4levelup Xp For Levelup]
+┃ ✾ *Xp:* %exp / %maxexp
+┃ ✾ *Total Xp:* %totalexp
 ┗━━━━━━━━ꕥ
 
 ┏──『 *Today* 』──⬣
