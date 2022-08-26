@@ -6,5 +6,6 @@ RUN apt-get install nodejs -y
 RUN apt-get install ffmpeg -y
 RUN apt-get install imagemagick -y
 
+RUN npm install
 CMD ["node", "index.js"]
 EXPOSE 6892
