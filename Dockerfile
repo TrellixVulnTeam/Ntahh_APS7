@@ -1,19 +1,10 @@
-FROM node:lts-buster
+FROM node:16.13.0
 
-RUN apt-get update && \
-  apt-get install -y \
-  ffmpeg \
-  imagemagick \
-  webp && \
-  apt-get upgrade -y && \
-  rm -rf /var/lib/apt/lists/*
-
-COPY package.json .
-
-RUN npm install && npm install qrcode-terminal
-
-COPY . .
-
-EXPOSE 5000
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install nodejs -y
+RUN apt-get install ffmpeg -y
+RUN apt-get install imagemagick -y
 
 CMD ["node", "index.js"]
+EXPOSE 6892
