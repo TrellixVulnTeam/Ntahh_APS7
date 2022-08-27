@@ -7,5 +7,5 @@ RUN apt-get install ffmpeg -y
 RUN apt-get install imagemagick -y
 RUN apt-get install webp -y
 
-CMD ["node", "index.js"]
+CMD ["npm", "start"]
 EXPOSE 6892

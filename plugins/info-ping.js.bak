@@ -134,5 +134,3 @@ handler.tags = ['info']
 
 handler.command = /^(ping|speed)$/i
 module.exports = handler
-
-const readMore = more.repeat(4001)

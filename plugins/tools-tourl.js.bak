@@ -17,9 +17,8 @@ let handler = async (m) => {
 		let data = await uploadFile(media)
 
 		m.reply(data.url)
-		m.reply('Upload Gambar Bisa Kamu Lakukan Di Website :\nhttps://uploader-one-botz.herokuapp.com')
 
-	} else throw 'Kirim atau reply media dengan caption :\n.tourl atau .upload'
+	} else throw 'No media found'
 
 }
 

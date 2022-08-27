@@ -223,5 +223,5 @@ async function _quickTest() {
 }
 
 _quickTest()
-  .then(() => conn.logger.info('Waiting For System Respones . . .'))
+  .then(() => conn.logger.info('Quick Test Done'))
   .catch(console.error)
