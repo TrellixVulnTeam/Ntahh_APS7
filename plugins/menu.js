@@ -217,7 +217,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                 },
                   {
                   "title": "Game",
-                  "description": "© 𝐀𝐫𝐢𝐞 𝐓𝐮𝐛𝐞",
+                  "description": "Menampilkan Menu Game",
                   "rowId": ".? game"
                 }, 
                 { "title": "Rpg",
