@@ -56,7 +56,7 @@ global.socket = {
 
 global.useMulti = false
 
-global.media = 'https://uploader-one-botz.herokuapp.com/file/rD88Mh8276ef.jpg'
+global.media = 'https://telegra.ph/file/64764d2f7cdd21d4a05db.jpg'
 
 // Sticker WM
 global.packname = '⬡ One Botz\n\n\n\n\n\n\n\n\n\n\nwa.me/6282128475388'
