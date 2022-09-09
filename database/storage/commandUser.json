@@ -1,1 +1,38 @@
-[]
+[
+  {
+    "jid": "6285730940279@s.whatsapp.net",
+    "db": [
+      {
+        "nama": "#sticker",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "jid": "6288905872192@s.whatsapp.net",
+    "db": [
+      {
+        "nama": "#infobot",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "jid": "6285963062121@s.whatsapp.net",
+    "db": [
+      {
+        "nama": "#ytmp4",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "jid": "6281522845311@s.whatsapp.net",
+    "db": [
+      {
+        "nama": "#menu",
+        "count": 1
+      }
+    ]
+  }
+]

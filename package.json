@@ -2,7 +2,7 @@
   "name": "hinata-md",
   "version": "0.0.5",
   "description": "Simple whatsapp bot with multi device.",
-  "main": "main.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },
@@ -13,7 +13,7 @@
   "author": "riy04",
   "license": "MIT",
   "dependencies": {
-    "@adiwajshing/baileys": "github:riy04/baileys",
+    "@adiwajshing/baileys": "^4.4.0",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@vitalets/google-translate-api": "^8.0.0",
     "acrcloud": "^1.4.0",
