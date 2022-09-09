@@ -1,7 +1,7 @@
 {
-  "name": "hinata-md",
-  "version": "0.0.5",
-  "description": "Simple whatsapp bot with multi device.",
+  "name": "todo-md",
+  "version": "7.1.0",
+  "description": "Multi Device.",
   "main": "index.js",
   "directories": {
     "lib": "lib"
