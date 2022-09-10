@@ -37,12 +37,12 @@ module.exports = {
         global.author2 = ''
         global.wm3 = '❏ One BotZ˚'
         global.wm2 = '⫹⫺ Onee 𝗕𝗢𝗧'
-        global.wm = '© CUTE IQ-MD'
+        global.wm = '「 Onee BOT あ⁩ 」'
         global.colong1 = 'Ciss 📸'
-        global.colong2 = 'By Haori & Ziv San'
+        global.colong2 = 'One Botz'
         global.kontak2 = [
-        ['16199961931', 'Ziv San', 'Creator Bot', 'Zivsan@support.com', true],
-        ['6282179137771', 'CUTE IQ-MD', 'Bot WhatsApp', 'Just Bot', true]
+        ['6283271710709', 'Davitt', 'Orang', 'Ingin Mabar Tapi Device Ga Mendukung :/', true],
+        ['6282128475388', 'Nomor Orang', 'Gatau Gw Yang Ini', 'Hehe', true]
         ]
         global.bg = await (await fetch(img)).buffer()
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
