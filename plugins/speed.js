@@ -26,7 +26,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     surface : 1,
     message: `⚡ Speed ${await conn.getName(conn.user.jid)}`, 
     orderTitle: ``,
-    thumbnail: await (await fetch('https://telegra.ph/file/6e083ec916dce9821fc2e.jpg')).buffer(), //Gambarnye
+    thumbnail: await (await fetch('https://i.pinimg.com/736x/78/04/84/78048418a79d9054bce1664cb8aa136e.jpg')).buffer(), //Gambarnye
     sellerJid: '0@s.whatsapp.net' 
     }
     }
@@ -34,7 +34,7 @@ let handler = async (m, { conn, usedPrefix }) => {
       let ftr = `
 Verify By ${waofc}
 Powered By ${ow}`
-  await m.reply('_Testing speed..._')
+  await m.reply('_*Mengetes Kecepatan . . . .*_\n_Jangan Spam Botnya Ya.._')
   await conn.delay(2000)
   const chats = Object.keys(await conn.chats)
   const groupsIn = chats.filter(id => id.endsWith('@g.us')) //groups.filter(v => !v.read_only)
@@ -66,7 +66,10 @@ Powered By ${ow}`
   let old = performance.now()
   let neww = performance.now()
   let speed = neww - old
-  await conn.send2ButtonDoc(m.chat, `💬 Status : 
+  await conn.send2ButtonDoc(m.chat, `
+Hasil : *${speed}* ms
+  
+  💬 Status : 
 • *${groupsIn.length}* Group Chats
 • *${groupsIn.length}* Groups Joined
 • *${groupsIn.length - groupsIn.length}* Groups Left
@@ -89,7 +92,7 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
      contextInfo: { forwardingScore: 99999, isForwarded: true, 
          externalAdReply: { 
                  sourceUrl: 'https://api-oneebotz.herokuapp.com/', 
-             title: `Merespon dalam ${speed} milidetik`, 
+             title: `Klik Bang!`, 
              body: 'Nothing', 
            thumbnail:  await (await fetch(fla + 'Ping')).buffer()
              } 

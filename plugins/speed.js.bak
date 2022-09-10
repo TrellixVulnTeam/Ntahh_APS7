@@ -3,7 +3,7 @@ let util = require('util')
 let { performance } = require('perf_hooks')
 let { sizeFormatter } = require('human-readable')
 let format = sizeFormatter({
-  std: 'JEDEC', // 'SI' (default) | 'IEC' | 'JEDEC'
+  std: 'SI', // 'SI' (default) | 'IEC' | 'JEDEC'
   decimalPlaces: 2,
   keepTrailingZeroes: false,
   render: (literal, symbol) => `${literal} ${symbol}B`,
@@ -88,9 +88,9 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
      quoted: ftrol,
      contextInfo: { forwardingScore: 99999, isForwarded: true, 
          externalAdReply: { 
-                 sourceUrl: 'https://vt.tiktok.com/ZSRRmS8vh/', 
+                 sourceUrl: 'https://api-oneebotz.herokuapp.com/', 
              title: `Merespon dalam ${speed} milidetik`, 
-             body: '© Cute IQ-MD By Ziv San', 
+             body: 'Nothing', 
            thumbnail:  await (await fetch(fla + 'Ping')).buffer()
              } 
       } 
