@@ -2,7 +2,7 @@ let limit = 30
 let fetch = require('node-fetch')
 const { servers, yta } = require('../lib/y2mate')
 let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) => {
-  if (!args || !args[0]) throw `Contoh Penggunaan:\n${usedPrefix + command} https://youtu.be/13ARO0HDZsQ`
+  if (!args || !args[0]) throw `contoh:\n${usedPrefix + command} https://www.youtube.com/watch?v=yxDdj_G9uRY`
   let chat = global.db.data.chats[m.chat]
   let server = (args[1] || servers[0]).toLowerCase()
   let { dl_link, thumb, title, filesize, filesizeF } = await yta(args[0], servers.includes(server) ? server : servers[0])
@@ -19,12 +19,12 @@ let handler = async (m, { conn, args, isPrems, isOwner, usedPrefix, command }) =
 `.trim(), m, null, {
     asDocument: chat.useDocument, mimetype: 'audio/mp4', ptt: true, contextInfo: {
         externalAdReply: {
-            title: '▶︎ Lagu Yang Diputar . . . ', 
-            body: '${title}',
-            description: '',
+            title: '▶︎ ━━━━━━━•────────────────── ', 
+            body: 'Now Playing...',
+            description: 'Now Playing...',
             mediaType: 2,
           thumbnail: await (await fetch(thumb)).buffer(),
-         mediaUrl: `https://youtu.be/13ARO0HDZsQ`
+         mediaUrl: `https://youtube.com/watch?v=uIedYGN3NQQ`
         }
      }
   })
@@ -42,7 +42,7 @@ handler.admin = false
 handler.botAdmin = false
 
 handler.fail = null
-handler.exp = 350
+handler.exp = 0
 handler.limit = true
 
 module.exports = handler
