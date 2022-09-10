@@ -41,8 +41,8 @@ module.exports = {
         global.colong1 = 'Ciss 📸'
         global.colong2 = 'One Botz'
         global.kontak2 = [
-        ['6283171710709', 'Davitt', 'Orang', 'Ingin Mabar Tapi Device Ga Mendukung :/', true],
-        ['6282128475388', 'Nomor Orang', 'Gatau Gw Yang Ini', 'Hehe', false]
+        ['6282128475388', '🤡', 'Orang', 'Ingin Mabar Tapi Device Ga Mendukung :/', true],
+        ['6283171710709', 'Davitt', 'Gatau Gw Yang Ini', 'Hehe', true]
         ]
         global.bg = await (await fetch(img)).buffer()
         global.time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
@@ -652,7 +652,7 @@ module.exports = {
                                 member: groupMetadata.participants.length
                             })
                             /*await this.send3TemplateButtonImg(id, action === 'add' ? wel : lea, text, wm, action === 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'FokusID')*/
-   await conn.sendButtonDoc(id, text, wm, action == 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'Cute IQ-MD', fkontak,{
+   await conn.sendButtonDoc(id, text, wm, action == 'add' ? 'selamat datang' : 'sampai jumpa', action === 'add' ? '.intro' : 'Onee-Botz_MD', fkontak,{
   contextInfo: {mentionedJid: [user],
     externalAdReply :{
     mediaUrl: linkyt,
