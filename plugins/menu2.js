@@ -47,7 +47,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) =>�
  │◦〉  ${_p}? textpro  
  │◦〉  ${_p}? photooxy 
  ╰━–━–━–━–━–⊙–━–━–━–━┈▧` 
-      await conn.send2ButtonLoc(m.chat, await (await fetch('https://api-oneebotz.herokuapp.com/images/neko5.png')).buffer(), caption, `ıll Runtime : ${uptime}\nlıl Tanggal : ${week} ${date}`, 'Donasi', `.donasi`, 'Owner', '.owner', m) 
+      await conn.send2ButtonLoc(m.chat, await (await fetch('https://i.pinimg.com/736x/1f/2b/e6/1f2be6669be1a470f5a637d0714fb4b6.jpg')).buffer(), caption, `ıll Runtime : ${uptime}\nlıl Tanggal : ${week} ${date}`, 'Donasi', `.donasi`, 'Owner', '.owner', m) 
   }  
   handler.help = ['menu2'] 
   handler.tags = ['main']  
