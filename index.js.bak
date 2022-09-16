@@ -1903,7 +1903,7 @@ break
             break
 				case 'help': case 'panel': case 'menu':{
 					try{
-			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-alphabot.herokuapp.com/visits')
+			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-oneebotz.herokuapp.com/visits')
 			} catch {
 				hit_total = { 
 					value : "-"
@@ -1932,44 +1932,44 @@ break
 				let ownernya = ownernomer + '@s.whatsapp.net'
 				var ini_anu =`Hi ${user.name}
 
-╭─❒ 「 Bot Info 」 
-├ Creator :  @${ownernya.split('@')[0]}
-├ Powered  : @${ini_mark.split('@')[0]}
-├ Prefix :   ${prefix}
-├ Total hit : ${hitall}
-├ Hit today : ${util.format(hitday.value)}
-├ Speed : ${latensii.toFixed(4)} Second
-├ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-├ Hostname : ${os.hostname()}
-├ Platform : ${os.platform()}
-├ Private chat : ${(Object.keys(db.data.chats).filter(v => v.endsWith('@s.whatsapp.net')).map(v => v).length)}
-├ Group chat : ${(Object.keys(db.data.chats).filter(v => v.endsWith('@g.us')).map(v => v).length)}
-├ Total chats :  ${(Object.keys(db.data.chats).filter(v => v.endsWith('@s.whatsapp.net')).map(v => v).length) + (Object.keys(db.data.chats).filter(v => v.endsWith('@g.us')).map(v => v).length)} 
-├ User In Database : ${Object.keys(global.db.data.users).length} Users
-├ User Registered : ${(Object.values(global.db.data.users).filter(user => user.registered == true).length)} Users
-├ User Banned : ${(Object.values(global.db.data.users).filter(user => user.banned == true).length)} Users
-├ User Blockir : ${goblock == undefined ? '0' : goblock.length} Users
+╭─❒『 Bot Info 』 
+│⬡ Creator :  @${ownernya.split('@')[0]}
+│⬡ Powered  : @${ini_mark.split('@')[0]}
+│⬡ Prefix :   ${prefix}
+│⬡ Total hit : ${hitall}
+│⬡ Hit today : ${util.format(hitday.value)}
+│⬡ Speed : ${latensii.toFixed(4)} Second
+│⬡ Memory Used : ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+│⬡ Hostname : ${os.hostname()}
+│⬡ Platform : ${os.platform()}
+│⬡ Private chat : ${(Object.keys(db.data.chats).filter(v => v.endsWith('@s.whatsapp.net')).map(v => v).length)}
+│⬡ Group chat : ${(Object.keys(db.data.chats).filter(v => v.endsWith('@g.us')).map(v => v).length)}
+│⬡ Total chats :  ${(Object.keys(db.data.chats).filter(v => v.endsWith('@s.whatsapp.net')).map(v => v).length) + (Object.keys(db.data.chats).filter(v => v.endsWith('@g.us')).map(v => v).length)} 
+│⬡ User In Database : ${Object.keys(global.db.data.users).length} Users
+│⬡ User Registered : ${(Object.values(global.db.data.users).filter(user => user.registered == true).length)} Users
+│⬡ User Banned : ${(Object.values(global.db.data.users).filter(user => user.banned == true).length)} Users
+│⬡ User Blockir : ${goblock == undefined ? '0' : goblock.length} Users
 ╰❒ Runtime : ${runtime(process.uptime())}
 
-╭─❒ 「 Date Info 」 
-├ Masehi : ${week}, ${date}
-├ Hijriah : ${dateIslamic}
+╭─❒ 『 Date Info 』 
+│⬡ Masehi : ${week}, ${date}
+│⬡ Hijriah : ${dateIslamic}
 ╰❒
 
-╭─❒ 「 User Info 」 
-├ Register: ${user.registered ? `✅\n├ Name : ${user.name}\n├ Age : ${user.age} years\n├ Gender : ${user.gender}\n├ Registered on : ${tanggal(user.regTime)}` : '❌'}
-├ Bio : ${bio ? bio : '-'}
-├ Nomor : @${m.sender.split('@')[0]}
-├ Limit : ${limit} limit
-├ XP : ${exp}
-├ Premium : ${user.premium ? '✅' : '❌'}
-├ Me : ${m.key.fromMe ? 'True' : 'False'}
+╭─❒ 『 User Info 』 
+│⬡ Register: ${user.registered ? `✅\n│⬡ Name : ${user.name}\n│⬡ Age : ${user.age} years\n│⬡ Gender : ${user.gender}\n│⬡ Registered on : ${tanggal(user.regTime)}` : '❌'}
+│⬡ Bio : ${bio ? bio : '-'}
+│⬡ Nomor : @${m.sender.split('@')[0]}
+│⬡ Limit : ${limit} limit
+│⬡ XP : ${exp}
+│⬡ Premium : ${user.premium ? '✅' : '❌'}
+│⬡ Me : ${m.key.fromMe ? 'True' : 'False'}
 ╰❒ Owner : ${isCreator ? 'True' : `False`}
 `	
 const buttojns = [
-  {buttonId: '.command', buttonText: {displayText: '📖 List Menu'}, type: 1},
-  {buttonId: '.owner', buttonText: {displayText: '🙍‍♂️ Owner'}, type: 1},
-  {buttonId: '.donasi', buttonText: {displayText: '💰 Donation'}, type: 1}
+  {buttonId: '.command', buttonText: {displayText: '❒ Halaman Menu'}, type: 1},
+  {buttonId: '.owner', buttonText: {displayText: '❒ Owner'}, type: 1},
+  {buttonId: '.donasi', buttonText: {displayText: '❒ Donation'}, type: 1}
 ]			
 					if(typemenu == 'document'){
 						if(db.data.users[m.sender].registered){
