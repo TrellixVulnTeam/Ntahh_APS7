@@ -1902,6 +1902,7 @@ break
 		}
             break
 				case 'help': case 'panel': case 'menu':{
+					m.reply('*MENAMPILKAN MENU . . .*\n_Jangan spam botnya ya. Kalo kamu lagi gabut bisa mampir kesini\nhttps://dapitt-randomwaifu.vercel.app\nBantu push hit sampe 500 ya >_<')
 					try{
 			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-oneebotz.herokuapp.com/visits')
 			} catch {
