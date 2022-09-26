@@ -32,13 +32,13 @@ global.myweb ="https://api.oneebotz.herokuapp.com" //bebas asal jan hapus
 global.youtube = "https://youtube.com/c/ZeeoneOfc" //bebas asal jan hapus
 global.myweb2 = "https://github.com/Davud0l1" //bebas
 global.email = "davidpangrib001@gmail.com" //bebas
-global.region = "Matahari" //bebas
+global.region = "Pluto" //bebas
 global.timezone = 'Asia/Jakarta' //  timezone wib
 global.premium = ['6283171710709','6282128475388'] //premium user
 global.owner = ['6283171710709','6282128475388'] //ganti agar fitur owner bisa di gunakan
 global.ownernomer = "6283171710709" // nomor wa kalian
 global.ownernomerr = "+6283171710709" //nmr wa kalian
-global.thumbnail = "./0.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
+global.thumbnail = "./3c8669d8fc1c707ee20b2c531e4c4e08.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://express-uploader.dapitt.repl.co/file/UBeeLf7bXLu3.jpg" // maks size 30kb, agar welcome image nya tdk delay
 global.thumbGif = 'https://telegra.ph/file/e90bef3779d3c5812a5d1.mp4'
@@ -49,7 +49,7 @@ global.typemenu = 'document'
 global.multiplier = 69
 global.limitawal = {
     premium: "10000",
-    free: 100
+    free: 150
 }
 
 global.adventureRPG = 'https://telegra.ph/file/ff94536d69e0f4f3e7b54.jpg'
