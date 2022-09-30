@@ -39,6 +39,7 @@ global.owner = ['6283171710709','6282128475388'] //ganti agar fitur owner bisa d
 global.ownernomer = "6283171710709" // nomor wa kalian
 global.ownernomerr = "+6283171710709" //nmr wa kalian
 global.thumbnail = "./3c8669d8fc1c707ee20b2c531e4c4e08.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
+global.tete = "./tete.jpg" // thumbnail 2
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
 global.background_welcome="https://express-uploader.dapitt.repl.co/file/UBeeLf7bXLu3.jpg" // maks size 30kb, agar welcome image nya tdk delay
 global.thumbGif = 'https://telegra.ph/file/e90bef3779d3c5812a5d1.mp4'
