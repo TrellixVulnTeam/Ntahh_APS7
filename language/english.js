@@ -1,6 +1,6 @@
 
 //saya hanya menggunakan google translate, so if there is an error please correct it 
-
+exports.serverErr = `Server is down!`
 exports.limitLu = (m) =>{
 	return`Your remaining limit : ${m} `
 	}
@@ -814,6 +814,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ !done
 
 ╭─❒ 「 Anonymous 」
+│○ !menfess
 │○ !anonymous 
 │○ !start
 │○ !skip [daerah]
@@ -878,6 +879,9 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 
 ╭─❒ 「 Group 」 
 │○ !addsewa
+│○ !delsewa
+│○ !listsewa
+│○ !ceksewa
 │○ !delsewa
 │○ !register
 │○ !unregister
@@ -953,6 +957,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │○ !wattpad [query]
 │○ !webtoons [query]
 │○ !drakor [query]
+│○ !brainly [query]
 ╰❒ !pinterest [query]
 
 
@@ -1875,6 +1880,9 @@ exports.group = (prefix) =>{
 	return`╭─❒ 「 Group 」 
 │○ !addsewa
 │○ !delsewa
+│○ !listsewa
+│○ !ceksewa
+│○ !delsewa
 │○ !register
 │○ !unregister
 │○ !ceksn
@@ -1956,6 +1964,7 @@ exports.search = (prefix) =>{
 │○ !wattpad [query]
 │○ !webtoons [query]
 │○ !drakor [query]
+│○ !brainly [query]
 ╰❒ !pinterest [query]
 `}
 
@@ -2685,6 +2694,7 @@ exports.islammenu = (prefix) =>{
 }
 exports.anonchat = (prefix) =>{
 	return`╭─❒ 「 Anonymous 」
+│○ !menfess
 │○ !anonymous 
 │○ !start
 │○ !skip [daerah]

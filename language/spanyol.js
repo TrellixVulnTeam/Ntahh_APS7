@@ -1,3 +1,4 @@
+exports.serverErr = `El servidor está caído`
 exports.limitLu = (m) =>{
 	return`Su límite restante : ${m} `
 	}
@@ -801,6 +802,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ !done
 
 ╭─❒ 「 Anonymous 」
+│○ !menfess
 │○ !anonymous 
 │○ !start
 │○ !skip [daerah]
@@ -865,6 +867,9 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 
 ╭─❒ 「 Group 」 
 │○ !addsewa
+│○ !delsewa
+│○ !listsewa
+│○ !ceksewa
 │○ !delsewa
 │○ !register
 │○ !unregister
@@ -940,6 +945,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │○ !wattpad [query]
 │○ !webtoons [query]
 │○ !drakor [query]
+│○ !brainly [query]
 ╰❒ !pinterest [query]
 
 
@@ -1862,6 +1868,9 @@ exports.group = (prefix) =>{
 	return`╭─❒ 「 Group 」 
 │○ !addsewa
 │○ !delsewa
+│○ !listsewa
+│○ !ceksewa
+│○ !delsewa
 │○ !register
 │○ !unregister
 │○ !ceksn
@@ -1943,6 +1952,7 @@ exports.search = (prefix) =>{
 │○ !wattpad [query]
 │○ !webtoons [query]
 │○ !drakor [query]
+│○ !brainly [query]
 ╰❒ !pinterest [query]
 `}
 
@@ -2672,6 +2682,7 @@ exports.islammenu = (prefix) =>{
 }
 exports.anonchat = (prefix) =>{
 	return`╭─❒ 「 Anonymous 」
+│○ !menfess
 │○ !anonymous 
 │○ !start
 │○ !skip [daerah]

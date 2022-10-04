@@ -38,10 +38,9 @@ global.premium = ['6283171710709','6282128475388'] //premium user
 global.owner = ['6283171710709','6282128475388'] //ganti agar fitur owner bisa di gunakan
 global.ownernomer = "6283171710709" // nomor wa kalian
 global.ownernomerr = "+6283171710709" //nmr wa kalian
-global.thumbnail = "./00.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
-global.tete = "./tete.jpg" // thumbnail 2
+global.thumbnail = "./v16.jpg" // ini lol.jpg adalah nama foto di folder image. untuk foto bot
 global.donasi = "./image/donasi.jpg" // foto donasi di folder image
-global.background_welcome="https://express-uploader.dapitt.repl.co/file/UBeeLf7bXLu3.jpg" // maks size 30kb, agar welcome image nya tdk delay
+global.background_welcome="https://telegra.ph/file/17a39a9fc54b1696626b4.jpg" // maks size 30kb, agar welcome image nya tdk delay
 global.thumbGif = 'https://telegra.ph/file/e90bef3779d3c5812a5d1.mp4'
 global.packname = 'One Botz\n\n\n\n\n\n\n\n\n\n\n\n\nwa.me/6282128475388\n\n' //sticker wm ubah
 global.author = '' //sticker wm ganti nama kalian
@@ -114,6 +113,7 @@ global.flaming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutpu
 global.fluming = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=fluffy-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flarun = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=runner-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
 global.flasmurf = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=smurfs-logo&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&text='
+global.rulesthumb = 'https://telegra.ph/file/83dfdee18643b35777c7f.jpg'
 
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'

@@ -1,3 +1,4 @@
+exports.serverErr = `Server sedang eror`
 exports.limitLu = (m) =>{
 	return`Sisa limit kamu : ${m} `
 	}
@@ -520,103 +521,103 @@ exports.Addstik = (prefix, command, t) => {
     return `Reply ${t} dengan caption ${prefix + command} text\n\nExample : ${prefix + command} bot`
 }
 exports.AllFitur = () => {
-    return `\n_Semua fitur bot_`
+    return `\nMenampilkan Semua Fitur Bot`
 }
 exports.InfoMenu = () => {
-    return `\n_Mencari informasi terkini melalui bot_`
+    return `\nCari Cari Imformasi..`
 }
 exports.KhususOwn = () => {
-    return `\n_Fitur khusus owner bot_`
+    return `\nFitur khusus owner bot`
 }
 exports.DataBor = () => {
-    return `\n_Menyimpan sesuatu di database bot_`
+    return `\nSimpan Simpan Di Database Bot`
 }
 exports.MenuGc = () => {
-    return `\n_Menampilkan fitur khusus group_`
+    return `\nHanya Bisa Diakses Di Grup`
 }
 exports.MenuAni = () => {
-    return `\n_Mencari random gambar anime_`
+    return `\nMenu Mencari Foto Animeh`
 }
 exports.TagMem = () => {
-    return `\n_Menandai member group_`
+    return `\nMenandai member grup`
 }
 exports.StalkOrk = () => {
-    return `\n_Kepoin sosmed orang_`
+    return `\nKepoin Media Sosial Orang Lain`
 }
 exports.Hoja = () => {
-    return `\n_Mencari sesuatu yang gk penting_`
+    return `\nMencari Sesuatu Yang Penting Penting`
 }
 exports.CovertWi = () => {
-    return `\n_Mengkorversi sesuatu dengan bot_`
+    return `\nMengubah/Convert Di Bot`
 }
 exports.AnuFoto = () => {
-    return `\n_Mengubah gambar jadi lebih menarik_`
+    return `\nBuat Gambar Menjadi Menarik`
 }
 exports.HajuStik = () => {
-    return `\n_Membuat stiker yang unik_`
+    return `\nBuat Stiker Menjadi Unik`
 }
 exports.EloDown= () => {
-    return `\n_Menampilkan fitur download_`
+    return `\nDownload Video YouTube, TikTok, dll..`
 }
 exports.StikerWibu = () => {
-    return `\n_Random stiker anime_`
+    return `\nRandom Stiker Anime`
 }
 exports.ImageDewasa = () => {
-    return `\n_Random image anime 18+_`
+    return `\nAnime 18+\n[ ! ] *Hanya Untuk Usia 18 Tahun Keatas*`
 }
 exports.MakeLogo = () => {
-    return `\n_Untuk membuat logo menggunakan bot_`
+    return `\nBuat Logo Di Bot`
 }
 exports.oterMenu = () => {
-    return `\n_Menu lainnya_`
+    return `\nMenu Lainnya`
 }
 exports.GameBot = () => {
-    return `\n_Fitur untuk bermain dengan bot_`
+    return `\nNgegame Di Bot`
 }
 exports.RandRik = () => {
-    return `\n_Random video tiktok_`
+    return `\nVideo TikTok Acak`
 }
 exports.RandCew = () => {
-    return `\n_Random gambar cewe cantik_`
+    return `\nFoto Cewe Cantik Acak`
 }
 exports.RamalOi = () => {
-    return `\n_Ramalan masa kini_`
+    return `\nYang Percaya Ramalan`
 }
 exports.TeleStik= () => {
-    return `\n_Random stiker dari telegram_`
+    return `\nStiker Telegram Acak`
 }
 exports.BuatLogoLagi = () => {
-    return `\n_Membuat logo keren dengan bot_`
+    return `\n_Buat Logo Lagi Di Bot, Hehe.._`
 }
 exports.SoundNih= () => {
-    return `\n_Random sound_`
+    return `\nSuara/Lagu Acak`
 }
 exports.KanLogoLagi = () => {
-    return `\n_Membuat logo menarik_`
+    return `\n_Logo Mulu Ya.._`
 }
 exports.TobatBro = () => {
-    return `\n_Fitur islami_`
+    return `\nTobat Nih Boss`
 }
 exports.MauJualan = () => {
-    return `\n_Fitur untuk berjualan_`
+    return `\nMau Jualan`
 }
 exports.Maustorage = () => {
-    return `\n_Fitur untuk menyimpan stiker, audio, foto dan video_`
+    return `\nSet Cmd (Command), Sama Anu Anu Lainnya..`
 }
 exports.MauChanger = () => {
-    return `\n_Fitur untuk mengubah suara audio / vn_`
+    return `\nFitur untuk mengubah suara audio / vn`
 }
 exports.GadaChat = () => {
-    return `\n_Fitur untuk melakukan chat random_`
+    return `\nFitur untuk melakukan chat random`
 }
 exports.SumberBot = () => {
-    return `\n_Sumber script bot ini_`
+    return `\nEsce Bot Ini`
 }
 exports.Tqnya = () => {
-    return `\n_Siapa aja yang berkontribusi di dalam bot ini_`
+    return `\nMakasih Yang Udah Jadi Kontributornya ♡`
 }
 exports.SetAh = () => {
-    return `Mau set menu ya ?`
+    return `Mau Setting Menu Apa??`
 }
 exports.KickAh = (gc) => {
     return `*Antilink Group Terdeteksi*\n\nKamu akan dikeluarkan dari group ${gc}`
@@ -631,7 +632,7 @@ exports.private = () =>{
 	return`Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `*WAIT*\n_Mohon Tunggu Sebentar . . ._`
+    return `⏳ Mohon tunggu sebentar`
 }
 exports.ok = () => {
     return `✅ Done.`
@@ -804,6 +805,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╰❒ !done
 
 ╭─❒ 「 Anonymous 」
+│○ !menfess
 │○ !anonymous 
 │○ !start
 │○ !skip [daerah]
@@ -868,6 +870,8 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ╭─❒ 「 Group 」 
 │○ !addsewa
 │○ !delsewa
+│○ !listsewa
+│○ !ceksewa
 │○ !register
 │○ !unregister
 │○ !ceksn
@@ -942,6 +946,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 │○ !wattpad [query]
 │○ !webtoons [query]
 │○ !drakor [query]
+│○ !brainly [query]
 ╰❒ !pinterest [query]
 
 
@@ -1866,6 +1871,9 @@ exports.group = (prefix) =>{
 	return`╭─❒ 「 Group 」 
 │○ !addsewa
 │○ !delsewa
+│○ !listsewa
+│○ !ceksewa
+│○ !delsewa
 │○ !register
 │○ !unregister
 │○ !ceksn
@@ -1947,6 +1955,7 @@ exports.search = (prefix) =>{
 │○ !wattpad [query]
 │○ !webtoons [query]
 │○ !drakor [query]
+│○ !brainly [query]
 ╰❒ !pinterest [query]
 `}
 
@@ -2676,6 +2685,7 @@ exports.islammenu = (prefix) =>{
 }
 exports.anonchat = (prefix) =>{
 	return`╭─❒ 「 Anonymous 」
+│○ !menfess
 │○ !anonymous 
 │○ !start
 │○ !skip [daerah]
