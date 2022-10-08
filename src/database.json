@@ -1,1 +1,70 @@
-{}
+{
+  "users": {
+    "6282128475388@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": "Infinity"
+    },
+    "6283171710709@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": "Infinity"
+    }
+  },
+  "group": {},
+  "chats": {
+    "6282128475388@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false,
+      "antilinkyt": false,
+      "antilinktt": false,
+      "antivirtex": true
+    },
+    "6283171710709@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false,
+      "antilinkyt": false,
+      "antilinktt": false,
+      "antivirtex": true
+    }
+  },
+  "database": {},
+  "game": {
+    "tebaklagu": [],
+    "family100": [],
+    "math": [],
+    "tebakgambar": [],
+    "tebakkata": [],
+    "lontong": [],
+    "lontong_desk": [],
+    "kalimat": [],
+    "lirik": [],
+    "tebakan": [],
+    "bendera": [],
+    "bendera2": [],
+    "kabupaten": [],
+    "kimia": [],
+    "asahotak": [],
+    "siapakahaku": [],
+    "susunkata": [],
+    "tekateki": []
+  },
+  "settings": {
+    "6282128475388@s.whatsapp.net": {
+      "anticall": true,
+      "status": 0,
+      "autobio": false,
+      "templateImage": true,
+      "templateVideo": false,
+      "templateGif": false,
+      "templateMsg": false,
+      "templateLocation": false
+    }
+  },
+  "donate": {},
+  "others": {
+    "vote": []
+  },
+  "sticker": {},
+  "anonymous": {}
+}
