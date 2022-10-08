@@ -8,7 +8,12 @@
     "6283171710709@s.whatsapp.net": {
       "afkTime": -1,
       "afkReason": "",
-      "limit": "Infinity"
+      "limit": null
+    },
+    "6285825012779@s.whatsapp.net": {
+      "afkTime": -1,
+      "afkReason": "",
+      "limit": 50
     }
   },
   "group": {},
@@ -21,6 +26,13 @@
       "antivirtex": true
     },
     "6283171710709@s.whatsapp.net": {
+      "mute": false,
+      "antilink": false,
+      "antilinkyt": false,
+      "antilinktt": false,
+      "antivirtex": true
+    },
+    "6288258022057-1631707864@g.us": {
       "mute": false,
       "antilink": false,
       "antilinkyt": false,
