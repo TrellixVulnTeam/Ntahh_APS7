@@ -1954,7 +1954,7 @@ break
             break
 				case 'help': case 'panel': case 'menu':{
 					try{
-			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-oneenotz.herokuapp.com//visits')
+			hit_total = await fetchJson('https://api.countapi.xyz/hit/api-oneebotz.herokuapp.com//visits')
 			} catch {
 				hit_total = { 
 					value : "-"
