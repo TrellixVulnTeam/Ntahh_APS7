@@ -9,7 +9,7 @@ global.fkontak = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(m.
 
 let str = `*HELLO*`
 let isi =`I'm OneBotz-MD Yang Di Buat Gak Niat Oleh David Karena Males Recode Jadi Pake Aja Apa Yang Ada Yah.\nKalau Ada Yg Error Bisa Langsung Report Ke Owner.\n${tag} (Owner)`
-let wibu = `https://i.pinimg.com/736x/07/0f/6e/070f6e4c6b9f810b015c248c849af05d.jpgy` 
+let wibu = `https://api-reysekha.herokuapp.com/api/random/cosplay?apikey=apirey` 
 let thumb = await(await fetch(wibu)).buffer()
 conn.send3ButtonImg(m.chat, `https://telegra.ph/file/776c2eb4da6a59a782bf3.jpg`, str, isi, 'Menu', '.command', 'Owner', '.owner', 'Credit', '.credit', m, { contextInfo: { externalAdReply: { showAdAttribution: true,
     mediaUrl: 'https://instagram.com/davidpangrib001',
