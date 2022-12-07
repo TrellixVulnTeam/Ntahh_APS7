@@ -1,5 +1,5 @@
 let handler = async (m, { conn }) => {
-    let wm = global.wm2
+    let wm = global.wm
     let user = global.db.data.users[m.sender]
     let __timers = (new Date - user.lastclaim)
     let _timers = (86400000 - __timers)
@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
         global.db.data.users[m.sender].lastclaim = new Date * 1
     } else {
         let buttons = `silahkan tunggu *⏱️${timers}* lagi untuk bisa mengclaim lagi`
-        conn.sendBut(m.chat, buttons, wm2, 'Cooldown', '.cd', m) 
+        conn.sendButton(m.chat, buttons, wm2, 'Cooldown', '.cd', m) 
     }
 }
 handler.help = ['claim', 'daily']

@@ -1,21 +1,12 @@
-let handler = async (m) => {
+let handler = async (m, { conn }) => {
     let who
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
-    fdoc = {
-  key : {
-  remoteJid: 'status@broadcast',
-  participant : '0@s.whatsapp.net'
-  },
-  message: {
-  documentMessage: {
-  title: wm, 
-                            }
-                          }
-                        }
-conn.sendBut(m.chat, `${global.db.data.users[who].limit} Limit Tersisaಥ_ಥ`, wm, 'BELI', '.buy', fdoc)
+    let user = global.db.data.users[who]
+    conn.reply(m.chat, `Limit @${who.split(`@`)[0]} *${user.limit}*`, m, { mentions: [who] })
 }
-handler.help = ['limit [@user]']
+handler.help = ['limit <@user>']
 handler.tags = ['xp']
-handler.command = /^(limit)$/i
+handler.command = /^(my|limit)$/i
+
 module.exports = handler

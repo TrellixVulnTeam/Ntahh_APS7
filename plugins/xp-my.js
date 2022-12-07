@@ -4,7 +4,7 @@ let handler = async (m) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     let user = global.db.data.users[who]
-    let toos = fs.readFileSync('./media/bank.jpg')
+    let toos = fs.readFileSync('./src/bank.jpg')
     let anu =`╭───❑ 「 BALANCE 」 ❑────
 ├─ 📇 *Name*: ${user.name}
 ├─ 🆔 *Nomor* : ${require('awesome-phonenumber')(`+${m.sender.split('@')[0]}`).getNumber('international')}
@@ -17,7 +17,7 @@ let handler = async (m) => {
 ├─ 📊 *Level*: ${user.level}
 ╰─❑ ✨ *Exp*: ${user.exp}
 `
-    conn.sendButtonImg(m.chat, toos, anu, wm2, 'Inventory 🐦', '.inv', m) 
+    conn.sendButtonImg(m.chat, toos, anu, wm, 'Inventory 🐦', '.inv', m) 
 }
 handler.help = ['dompet', 'dompet @user', 'bank', 'bank @user']
 handler.tags = ['xp', 'rpg']

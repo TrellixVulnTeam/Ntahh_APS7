@@ -29,7 +29,7 @@ let zer = `
  *◩   ️ 🐖 = [ ${babi} ] Ekor Babi*
  *◩   ️ 🐓 = [ ${ayam} ] Ekor Ayam*
  `.trim()
- conn.sendBut(m.chat, zer,wm, 'Toko', '.pasar', m)
+ conn.sendButton(m.chat, zer,wm, 'Toko', '.pasar', m)
 } 
 handler.help = ['kandang']
 handler.command= /^(kandang)$/i

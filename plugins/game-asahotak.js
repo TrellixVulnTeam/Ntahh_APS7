@@ -1,5 +1,5 @@
 
-const fetch = require('node-fetch')
+const fetch = require ('node-fetch')
 let timeout = 120000
 let poin = 2500
 let handler = async (m, { conn, usedPrefix }) => {

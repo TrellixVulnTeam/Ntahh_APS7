@@ -1,4 +1,4 @@
-const fetch = require('node-fetch')
+const fetch = require ('node-fetch')
 let timeout = 120000
 let poin = 500
 let handler = async (m, { conn, usedPrefix }) => {
@@ -17,7 +17,7 @@ Ketik ${usedPrefix}tebe untuk bantuan
 Bonus: ${poin} XP
     `.trim()
   conn.tebakbendera[id] = [
-    await conn.sendButtonImg(m.chat, json.img, caption, wm3, 'Bantuan', '.tebe', m)
+    await conn.sendButtonImg(m.chat, json.img, caption, titlebot, 'Bantuan', '.tebe', m)
     ,
     json, poin,
     setTimeout(async () => {

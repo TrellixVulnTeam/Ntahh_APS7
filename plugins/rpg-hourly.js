@@ -18,7 +18,7 @@ let handler = async (m, { conn }) => {
         user.limit += 1
         user.lasthourly= new Date * 1
     } else {
-        conn.sendBut(m.chat, `silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`, wm, 'Inventory', '.inv',m )
+        conn.sendButton(m.chat, `silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`, wm, 'Inventory', '.inv',m )
     }
 }
 handler.help = ['hourly']

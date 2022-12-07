@@ -2,6 +2,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
   let isEnable = /true|enable|(turn)?on|1/i.test(command)
   let chat = global.db.data.chats[m.chat]
   let user = global.db.data.users[m.sender]
+  let set = global.db.data.settings[conn.user.jid]
   let type = (args[0] || '').toLowerCase()
   let isAll = false
   let isUser = false
@@ -9,7 +10,7 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     case 'welcome':
       if (!m.isGroup) {
         if (!isOwner) {
-          global.dfail('group', m, conn)
+          global.dfail('admin', m, conn)
           throw false
         }
       } else if (!isAdmin) {
@@ -39,6 +40,18 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
       }
       chat.delete = isEnable
       break
+    case 'antibadword':
+      if (!m.isGroup) {
+        if (!isOwner) {
+          dfail('admin', m, conn)
+          throw false
+        }
+      } else if (!(isAdmin || isOwner)) {
+        dfail('admin', m, conn)
+        throw false
+      }
+      chat.badword = isEnable
+      break
     case 'antidelete':
       if (m.isGroup) {
         if (!(isAdmin || isOwner)) {
@@ -67,6 +80,18 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         throw false
       }
       global.opts['self'] = !isEnable
+      break
+    case 'antispam':
+      if (m.isGroup) {
+        if (!isOwner) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      } else if (!isAdmin) {
+        global.dfail('admin', m, conn)
+        throw false
+      }
+      chat.antiSpam = isEnable
       break
     case 'antilink':
       if (m.isGroup) {
@@ -112,6 +137,14 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         }
       }
       chat.antiToxic = isEnable
+    case 'antivirtex':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.antiVirtex = isEnable
       break
     case 'autolevelup':
       isUser = true
@@ -136,6 +169,24 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
         throw false
       }
       global.opts['restrict'] = isEnable
+      break
+case 'viewonce':
+    case 'antiviewonce':
+      if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }
+      }
+      chat.viewonce = isEnable
+      break
+      case 'nsfw':
+        if (m.isGroup) {
+        if (!(isAdmin || isOwner)) {
+          global.dfail('admin', m, conn)
+          throw false
+        }}
+      chat.nsfw = isEnable
       break
     case 'nyimak':
       isAll = true
@@ -192,23 +243,28 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
     default:
       if (!/[01]/.test(command)) return m.reply(`
 List option:
-| welcome
-| delete
-| public
-| antilink
-| antidelete
-| antisticker
-| autosticker
-| autolevelup
-| detect
-| document
-| whitelistmycontacts
-| restrict
-| nyimak
-| autoread
-| pconly
-| gconly
-| swonly
+❗welcome
+❗delete
+❗public
+❗antivirtex
+❗antilink
+❗antiviewonce
+❗nsfw
+❗antidelete
+❗antitoxic
+❗antisticker
+❗autosticker
+❗antibadword
+❗autolevelup
+❗detect
+❗document
+❗whitelistmycontacts
+❗restrict
+❗nyimak
+❗autoread
+❗pconly
+❗gconly
+❗swonly
 Contoh:
 ${usedPrefix}enable welcome
 ${usedPrefix}disable welcome
@@ -222,5 +278,6 @@ ${usedPrefix}disable welcome
 handler.help = ['en', 'dis'].map(v => v + 'able <option>')
 handler.tags = ['group', 'owner']
 handler.command = /^((en|dis)able|(tru|fals)e|(turn)?o(n|ff)|[01])$/i
+handler.admin = true
 
 module.exports = handler

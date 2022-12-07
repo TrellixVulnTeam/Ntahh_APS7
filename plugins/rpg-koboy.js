@@ -26,8 +26,8 @@ let handler = (m, { conn, usedPrefix, command, text }) => {
 
 
 
-    if(conn.tembak.musuh.indexOf("🥷") === conn.tembak.tembak.indexOf("🤠")) return conn.sendBut(m.chat, pos, "©LitRHap", "Tembak", `${usedPrefix}${command} tembak`)
-    return conn.send2But(m.chat, pos, "©LitRHap", "←", `${usedPrefix}${command} kiri`, "→", `${usedPrefix}${command} kanan`)
+    if(conn.tembak.musuh.indexOf("🥷") === conn.tembak.tembak.indexOf("🤠")) return conn.sendButton(m.chat, pos, wm, "Tembak", `${usedPrefix}${command} tembak`)
+    return conn.send2Button(m.chat, pos, wm, "←", `${usedPrefix}${command} kiri`, "→", `${usedPrefix}${command} kanan`)
   } else if(/kanan/i.test(text)) {
 
     let kanan = [
@@ -54,14 +54,14 @@ let handler = (m, { conn, usedPrefix, command, text }) => {
 
 
 
-    if(conn.tembak.musuh.indexOf("🥷") === conn.tembak.tembak.indexOf("🤠")) return conn.sendBut(m.chat, pos, "©LitRHap", "Tembak", `${usedPrefix}${command} tembak`)
-    return conn.send2But(m.chat, pos, "©LitRHap", "←", `${usedPrefix}${command} kiri`, "→", `${usedPrefix}${command} kanan`)
+    if(conn.tembak.musuh.indexOf("🥷") === conn.tembak.tembak.indexOf("🤠")) return conn.sendButton(m.chat, pos, wm, "Tembak", `${usedPrefix}${command} tembak`)
+    return conn.send2Button(m.chat, pos, wm, "←", `${usedPrefix}${command} kiri`, "→", `${usedPrefix}${command} kanan`)
   } else if(/tembak/i.test(text)) {
 
     if(conn.tembak.tembak.indexOf("🤠") == conn.tembak.musuh.indexOf("🥷")) {
       conn.tembak = {}
       global.db.data.users[m.sender].money += 1000
-      m.reply("Kamu menang!\n\nUang += 1000")
+      conn.sendButton(m.chat, `Kamu menang!\n\nUang += 1000`, wm, "Main Lagi", `${usedPrefix}${command}`, m)
     }
 
   } else {
@@ -88,8 +88,8 @@ let handler = (m, { conn, usedPrefix, command, text }) => {
 
     let pos = conn.tembak.musuh.join(" ") + "\n\n\n" + conn.tembak.tembak.join(" ")
 
-    if(conn.tembak.musuh.indexOf("🥷") === conn.tembak.tembak.indexOf("🤠")) return conn.sendBut(m.chat, pos, "©LitRHap", "Tembak", `${usedPrefix}${command} tembak`)
-    return conn.send2But(m.chat, pos, "©Muhammad Restu", "←", `${usedPrefix}${command} kiri`, "→", `${usedPrefix}${command} kanan`)
+    if(conn.tembak.musuh.indexOf("🥷") === conn.tembak.tembak.indexOf("🤠")) return conn.sendButton(m.chat, pos, wm, "Tembak", `${usedPrefix}${command} tembak`)
+    return conn.send2Button(m.chat, pos, wm, "←", `${usedPrefix}${command} kiri`, "→", `${usedPrefix}${command} kanan`)
   }
 }
 handler.help = ['koboy']

@@ -1,14 +1,11 @@
 let handler = async (m, { conn }) => {
     let _uptime = process.uptime() * 1000
     let uptime = clockString(_uptime)
-    let time = require('moment-timezone').tz('Asia/Jakarta').format('HH:mm:ss')
 
 m.reply(`
-*───「 RUNTIME BOT 」───*
-
-Runtime : ${uptime} 
-Waktu : ${time}
-
+┌─〔 R U N T I M E 〕
+├ Bot Aktif Selama ${uptime}
+└────
     `)
 }
 handler.help = ['runtime']

@@ -15,7 +15,7 @@ let handler = async (m, { conn }) => {
         user.lastweekly= new Date * 1
     } else {
         let buts = `silahkan tunggu *🕒${timers}* lagi untuk bisa mengclaim lagi`
-        conn.sendBut(m.chat, buts, wm3, 'Berburu', '.berburu', m) 
+        conn.sendButton(m.chat, buts, titlebot, 'Berburu', '.berburu', m) 
     }
 }
 handler.help = ['weekly']

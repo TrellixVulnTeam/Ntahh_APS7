@@ -4,7 +4,7 @@ let handler = async (m, { conn }) => {
     if (m.isGroup) who = m.mentionedJid[0] ? m.mentionedJid[0] : m.sender
     else who = m.sender
     let name = conn.getName(m.sender)
-    let thumbnail = fs.readFileSync('./media/bank.jpg')
+    let thumbnail = fs.readFileSync('./src/bank.jpg')
     let user = global.db.data.users[who]
 let anu = `
 🏦 Bank *${user.name}*

@@ -1,31 +1,32 @@
-let fetch = require('node-fetch')
-let timeout = 120000
-let poin = 500
+const fs = require('fs')
+const fetch = require('node-fetch')
+const timeout = 120000
+const poin = 500
 let handler = async (m, { conn, usedPrefix }) => {
     conn.tebakkata = conn.tebakkata ? conn.tebakkata : {}
     let id = m.chat
     if (id in conn.tebakkata) {
-        conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.tebakkata[id][0])
+        conn.sendButton(m.chat, 'Masih ada soal belum terjawab di chat ini', wm, 'Bantuan', usedPrefix + 'teka', conn.tebakkata[id][0])
         throw false
     }
-    let res = await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/tebakkata.json')
-    if (!res.ok) throw await `${res.status} ${res.statusText}`
-    let data = await res.json()
-    let json = data[Math.floor(Math.random() * data.length)]
+    let res = JSON.parse(fs.readFileSync('./api/tebakkata.json'))
+    let random = Math.floor(Math.random() * res.length)
+    let json = res[random]
     let caption = `
-${json.soal}
+    ${json.soal}
 
 Timeout *${(timeout / 1000).toFixed(2)} detik*
 Ketik ${usedPrefix}teka untuk bantuan
 Bonus: ${poin} XP
-`.trim()
+    `.trim()
     conn.tebakkata[id] = [
-        await conn.sendBut(m.chat, caption, wm, 'Bantuan', '.teka', m),
-        json, poin,
-        setTimeout(async () => {
-            if (conn.tebakkata[id]) await conn.sendBut(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, '© stikerin', 'Tebak Kata', '.tebakkata', conn.tebakkata[id][0])
+    await conn.sendButtonLoc(m.chat, await (await fetch(fla + 'tebak kata?')).buffer(), caption, wm, 'Bantuan', usedPrefix + 'teka', m),
+    json,
+    poin,
+    setTimeout(() => {
+        if (conn.tebakkata[id]) conn.sendButton(m.chat, `Waktu habis!\nJawabannya adalah *${json.jawaban}*`, wm, 'tebak kata', usedPrefix + 'tebakkata', conn.tebakkata[id][0])
             delete conn.tebakkata[id]
-        }, timeout)
+    }, timeout)
     ]
 }
 handler.help = ['tebakkata']

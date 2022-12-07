@@ -47,7 +47,7 @@ ${ usedPrefix }Cook catfish `
         conn.sendButtonImg(m.chat, gggd, mcng, wm2, 'Inventory', '.inv', m)
          if (psepick > 0 ) {
          	global.db.data.users[m.sender].psepick += psepick * 1
-         conn.sendBut(m.chat, `You Get 🎁chest weapons epic ${psepick} item`, wm2, 'again', '.mancing', m)
+         conn.sendButton(m.chat, `You Get 🎁chest weapons epic ${psepick} item`, wm2, 'again', '.mancing', m)
          } 
         if  (psenjata > 0 ) {
         	global.db.data.users[m.sender].psenjata+= psenjata * 1
@@ -78,7 +78,7 @@ ${ usedPrefix }Cook catfish `
          user.kepiting += kepiting * 1
 
         	  } else m.reply(`You're already fishing, wait until ${timers}`)
-           } else conn.sendBut(m.chat, `*[❗] kamu tidak punya kail pancingan 🎣*`, wm, `Craft Fishingrod`, '.craft pancing', m)
+           } else conn.sendButton(m.chat, `*[❗] kamu tidak punya kail pancingan 🎣*`, wm, `Craft Fishingrod`, '.craft pancing', m)
            } catch (e) {
         console.log(e)
         conn.reply(m.chat, 'Error', m)

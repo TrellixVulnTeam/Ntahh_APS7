@@ -105,7 +105,7 @@ let handler = async (m, { conn, usedPrefix }) => {
 ⚠️ *Warn:* ${warn}
 ⛔ *Banned:* No
 `.trim()
-    conn.send2But(m.chat, str, wm2, `Inventory`, `.inv`, `Profile`, `.profile`, m)
+    conn.send2Button(m.chat, str, wm2, `Inventory`, `.inv`, `Profile`, `.profile`, m)
     conn.reply(str)
 }
 handler.help = ['cd','cooldown']

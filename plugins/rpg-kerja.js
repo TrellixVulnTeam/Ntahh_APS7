@@ -106,7 +106,7 @@ global.db.data.users[m.sender].lastkerja = new Date * 1
 	m.reply(`Kamu baru saja selesai ${rumah} 🔨\nDan mendapatkan uang senilai *Rp ${duitk} 💹*`)
 break
 default:
-                        return conn.sendBut( m.chat, kerjam, `${wm}`,`Back`,'.menu')
+                        return conn.sendButton( m.chat, kerjam, `${wm}`,`Back`,'.menu')
                 }
                 }
                 

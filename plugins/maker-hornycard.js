@@ -5,7 +5,6 @@ avatar: await conn.profilePictureUrl(who, 'image').catch(_ => 'https://telegra.p
 }), 'hornycard.png', '*Nih Kartunya Kak*', m)
 }
 handler.help = ['hornycard', 'hornylicense']
-handler.tags = ['maker', 'serti'] 
+handler.tags = ['maker'] 
 handler.command = /^(horny(card|license))$/i 
-
 module.exports = handler
